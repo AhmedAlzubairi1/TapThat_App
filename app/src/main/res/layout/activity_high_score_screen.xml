@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background"
+    tools:context=".highScoreScreen">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/androidscreen3"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large-Text"
+        android:id="@+id/highScoreNumber"
+        android:layout_above="@+id/currentScoreNumber"
+        android:layout_alignEnd="@+id/currentScoreNumber"
+        android:layout_marginBottom="151dp"
+        android:textSize="30dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:padding="5px"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/currentScoreNumber"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="116dp"
+        android:textSize="30dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:padding="5px"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="High Score"
+        android:id="@+id/highScoreText"
+        android:layout_above="@+id/highScoreNumber"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:padding="5px"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Last Score"
+        android:id="@+id/lastScoreText"
+        android:layout_above="@+id/currentScoreNumber"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:padding="5px"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap That"
+        android:id="@+id/button2"
+        android:onClick="sendTOGame"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/currentScoreNumber" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Screen"
+        android:id="@+id/button5"
+        android:onClick="goToMainScreen"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/currentScoreNumber" />
+</RelativeLayout>

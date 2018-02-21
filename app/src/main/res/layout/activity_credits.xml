@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.macbookair.tap_that.credits">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/androidscreen3"
+        android:scaleType="fitXY"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Coded By Ahmed Alzubairi. \n Images and designs drawn by Jamesey Exime \n &quot;Victory &quot; by BoxCatGames is licensed under CC BY 2.0 \n (http://freemusicarchive.org/music/BoxCat_Games/Nameless_the_Hackers_RPG_Soundtrack/BoxCat_Games_-_Nameless-_the_Hackers_RPG_Soundtrack_-_25_Victory)"
+        android:id="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:padding="100px"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap That"
+        android:id="@+id/button9"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="sendTOGame"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:id="@+id/button10"
+        android:onClick="goToMainScreen"
+        android:layout_alignTop="@+id/button9"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
